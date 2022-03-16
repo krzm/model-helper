@@ -9,10 +9,14 @@ public abstract class ModelAUpdate : IUpdatable<IModelA>
     public void Update(IModelA model)
     {
         if (string.IsNullOrWhiteSpace(Name) == false
-            && Name.Trim() != model.Name.Trim())
-            model.Name = Name;
+            && Name.Trim() != model.Name?.Trim())
+            {
+                model.Name = Name;
+            }
         if (string.IsNullOrWhiteSpace(Description) == false
-            && Description.Trim() != model.Description.Trim())
-            model.Description = Description;
+            && Description.Trim() != model.Description?.Trim())
+            {
+                model.Description = Description;
+            }
     }
 }
