@@ -4,7 +4,7 @@ using Unity;
 
 namespace ModelHelper;
 
-public abstract class AppMappings<TMapperConfig>
+public abstract class AppMappings
     : UnityDependencySet
 {
     public AppMappings(
