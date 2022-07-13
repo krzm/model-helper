@@ -6,6 +6,8 @@ public abstract class Model
     protected const int DescriptionMax = 280;
     protected const int PathMax = 260;
 
+    protected const string Datetime2Name = "datetime2";
+
     protected const double DoubleMax = 1000000;
     
     protected const string IdError = "Id must be greater than zero";
