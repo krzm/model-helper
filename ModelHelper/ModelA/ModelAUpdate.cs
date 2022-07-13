@@ -1,6 +1,7 @@
 ﻿namespace ModelHelper;
 
-public abstract class ModelAUpdate : IUpdatable<IModelA>
+public abstract class ModelAUpdate
+    : IUpdatable<IModelA>
 {
     public string? Name { get; set; }
 
