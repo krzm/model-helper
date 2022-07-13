@@ -1,9 +1,22 @@
-﻿namespace ModelHelper;
+﻿using System.ComponentModel.DataAnnotations;
+
+namespace ModelHelper;
 
 public class ModelA 
-	: IModelA
+    : Model
+    , IModelA
 {
 	public int Id { get; set; }
-	public string? Name { get; set; }
+
+    [Required]
+	[MaxLength(NameMax)]
+	public string Name { get; set; }
+
+    [MaxLength(DescriptionMax)]
 	public string? Description { get; set; }
+
+    public ModelA()
+    {
+        Name = string.Empty;
+    }
 }
