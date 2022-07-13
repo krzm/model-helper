@@ -10,13 +10,8 @@ public class ModelA
 
     [Required]
 	[MaxLength(NameMax)]
-	public string Name { get; set; }
+	public string? Name { get; set; }
 
     [MaxLength(DescriptionMax)]
 	public string? Description { get; set; }
-
-    public ModelA()
-    {
-        Name = string.Empty;
-    }
 }
