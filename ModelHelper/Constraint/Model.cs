@@ -6,10 +6,12 @@ public abstract class Model
     protected const int DescriptionMax = 280;
     protected const int PathMax = 260;
 
-    protected const string Datetime2Name = "datetime2";
+    protected const int IdMin = 1;
+    protected const int IdMax = int.MaxValue;
 
-    protected const double DoubleMax = 1000000;
-    
+    protected const string Datetime2Name = "datetime2";
+    protected const string DateFormat = "dd.MM.yyyy HH:mm";
+
     protected const string IdError = "Id must be greater than zero";
 
     protected static readonly IDictionary<Field, MaxLength> MaxLength;
